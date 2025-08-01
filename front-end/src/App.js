@@ -1,7 +1,10 @@
-import Header from "./Header";
+import { RouterProvider } from "react-router-dom";
+
+import "./global.css";
+import router from "./routes";
 
 function App() {
-  return <Header title="Semana OmniStack" />;
+  return <RouterProvider router={router} />;
 }
 
 export default App;
